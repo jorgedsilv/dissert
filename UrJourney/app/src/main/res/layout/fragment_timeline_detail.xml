@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history.TimelineDetailFragment">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/timeline_detail_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="ME"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeline_detail_mood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/timeline_detail_mood"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_header" />
+
+    <ImageButton
+        android:id="@+id/btnGreen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_sentiment_satisfied_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_mood" />
+
+    <ImageButton
+        android:id="@+id/btnYellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_sentiment_neutral_black"
+        app:layout_constraintStart_toEndOf="@+id/btnGreen"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_mood" />
+
+    <ImageButton
+        android:id="@+id/btnRed"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_sentiment_dissatisfied_black"
+        app:layout_constraintStart_toEndOf="@+id/btnYellow"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_mood" />
+
+    <TextView
+        android:id="@+id/timeline_detail_feeling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/timeline_detail_feeling"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGreen" />
+
+    <ImageButton
+        android:id="@+id/btnUp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_thumb_up_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_feeling" />
+
+    <ImageButton
+        android:id="@+id/btnUncertain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_thumbs_uncertain_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/btnGreen"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_feeling" />
+
+    <ImageButton
+        android:id="@+id/btnDown"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/ic_thumb_down_black_24dp"
+        app:layout_constraintStart_toEndOf="@+id/btnYellow"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_feeling" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/timeline_detail_feeling_note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUp">
+
+        <EditText
+            android:id="@+id/timeline_detail_feeling_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/timeline_detail_feeling_note"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<ImageView
+        android:id="@+id/timeline_detail_weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_feeling_note_layout" />
+
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_weather_icon"
+
+        android:layout_marginStart="25dp"
+        -->
+
+    <TextView
+        android:id="@+id/timeline_detail_weather_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="temp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_feeling_note_layout" />
+
+    <TextView
+        android:id="@+id/timeline_detail_weather_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="descrip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_weather_temperature" />
+
+    <!-- location -->
+
+    <ImageView
+        android:id="@+id/timeline_detail_location_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_weather_description"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+    <TextView
+        android:id="@+id/timeline_detail_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:text="location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_weather_description"
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_location_icon"/>
+
+    <!-- bpm -->
+
+    <!--app:srcCompat="@drawable/icons8_heart_with_pulse_24"-->
+    <ImageView
+        android:id="@+id/timeline_detail_bpm_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="false"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_location"
+        app:srcCompat="@drawable/ic_heartbeat" />
+
+    <TextView
+        android:id="@+id/timeline_detail_bpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:text="bpm"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_location"
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_bpm_icon" />
+
+    <!-- steps -->
+
+    <!--app:srcCompat="@drawable/icons8_baby_footprint_24"-->
+    <ImageView
+        android:id="@+id/timeline_detail_steps_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="false"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_bpm"
+        app:srcCompat="@drawable/ic_walking" />
+
+    <TextView
+        android:id="@+id/timeline_detail_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:text="steps"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_bpm"
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_steps_icon"/>
+
+    <!-- sleep -->
+
+    <!--app:srcCompat="@drawable/icons8_timer_24"-->
+    <ImageView
+        android:id="@+id/timeline_detail_sleep_duration_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="false"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_steps"
+        app:srcCompat="@drawable/ic_sleep_duration" />
+
+    <TextView
+        android:id="@+id/timeline_detail_sleep_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="7dp"
+        android:text="sleep duration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_steps"
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_sleep_duration_icon"/>
+
+    <!-- app:srcCompat="@drawable/icons8_sleeping_in_bed_24"-->
+    <ImageView
+        android:id="@+id/timeline_detail_sleep_start_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:adjustViewBounds="false"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_duration"
+        app:srcCompat="@drawable/ic_sleep_start" />
+
+    <TextView
+        android:id="@+id/timeline_detail_sleep_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="25dp"
+        android:text="sleep start"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_duration"
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_sleep_start_icon"/>
+
+    <!-- app:srcCompat="@drawable/icons8_retro_alarm_clock_24" -->
+    <ImageView
+        android:id="@+id/timeline_detail_sleep_end_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:layout_marginTop="3dp"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_start"
+        app:srcCompat="@drawable/ic_sleep_end" />
+
+    <TextView
+        android:id="@+id/timeline_detail_sleep_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="25dp"
+        android:text="sleep end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_start"
+        app:layout_constraintStart_toEndOf="@+id/timeline_detail_sleep_end_icon"/>
+    <!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/complete_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="104dp"
+        android:src="@drawable/ic_check_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_duration" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cancel_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="104dp"
+        android:src="@drawable/ic_cancel_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_duration" />
+    -->
+    <Button
+        android:id="@+id/complete_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="complete"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/timeline_detail_sleep_end" />
+    <Button
+        android:id="@+id/cancel_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/complete_button" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cancel_button"/>
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<Preference
+        android:summary="Connect to Health provider" />-->
+
+    <SwitchPreference
+        android:key="switch_enable_health"
+        android:title="Enable Health provider"
+        android:summary="Connect to Health provider"
+        android:defaultValue="false"/>
+    <SwitchPreference
+        android:dependency="switch_enable_health"
+        android:key="switch_google_fit"
+        android:title="@string/pref_inner_health_title_google"
+        android:summary="@string/pref_inner_health_summary_google"
+        android:defaultValue="false"/>
+
+    <SwitchPreference
+        android:key="switch_samsung_health"
+        android:title="@string/pref_inner_health_title_samsung"
+        android:summary="@string/pref_inner_health_summary_samsung"
+        android:defaultValue="false"/>
+
+    <SwitchPreference
+        android:key="switch_huawei_health"
+        android:title="@string/pref_inner_health_title_huawei"
+        android:summary="@string/pref_inner_health_summary_huawei"
+        android:defaultValue="false"/>
+</PreferenceScreen>

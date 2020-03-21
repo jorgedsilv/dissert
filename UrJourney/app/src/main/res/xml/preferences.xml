@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Account -->
+    <PreferenceScreen
+        android:key="setting_button_account_key"
+        android:title="@string/pref_header_account_title"
+        android:summary="@string/pref_header_account_summary"
+        android:icon="@drawable/ic_person_black"
+        android:iconSpaceReserved="true">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_account_title"
+            android:summary="@string/pref_header_account_summary">
+
+            <Preference
+                android:key="@string/pref_inner_account_title_first_name"
+                android:title="@string/pref_inner_account_title_first_name"
+                android:summary="@string/pref_inner_account_summary_first_name" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_last_name"
+                android:title="@string/pref_inner_account_title_last_name"
+                android:summary="@string/pref_inner_account_summary_last_name" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_email"
+                android:title="@string/pref_inner_account_title_email"
+                android:summary="@string/pref_inner_account_summary_email" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_birthday"
+                android:title="@string/pref_inner_account_title_birthday"
+                android:summary="@string/pref_inner_account_summary_birthday" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_gender"
+                android:title="@string/pref_inner_account_title_gender"
+                android:summary="@string/pref_inner_account_summary_gender" />
+
+            <!--<ListPreference
+                android:dialogTitle="@string/pref_inner_account_title_gender"
+                android:entries="@array/personal_info_gender_entries"
+                android:entryValues="@array/personal_info_gender_values"
+                android:key="@string/pref_inner_account_title_gender"
+                android:summary="@string/pref_inner_account_summary_gender"
+                android:title="@string/pref_inner_account_title_gender" /> -->
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+    <!-- Health -->
+    <PreferenceScreen
+        android:key="setting_button_health_key"
+        android:title="@string/pref_header_health_title"
+        android:summary="@string/pref_header_health_summary"
+        android:icon="@drawable/ic_health_black">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_health_title"
+            android:summary="@string/pref_header_health_summary">
+
+        <!--<Preference
+            android:summary="Connect to Health provider" />-->
+
+            <SwitchPreference
+                android:key="switch_enable_health"
+                android:title="@string/pref_inner_health_title_google"
+                android:summary="@string/pref_inner_health_summary_google"
+                android:defaultValue="true" />
+
+            <!--<SwitchPreference
+                android:dependency="switch_enable_health"
+                android:key="switch_google_fit"
+                android:title="@string/pref_inner_health_title_google"
+                android:summary="@string/pref_inner_health_summary_google"
+                android:defaultValue="false"/>
+
+            <SwitchPreference
+                android:dependency="switch_enable_health"
+                android:key="switch_samsung_health"
+                android:title="@string/pref_inner_health_title_samsung"
+                android:summary="@string/pref_inner_health_summary_samsung"
+                android:defaultValue="false"/>
+
+            <SwitchPreference
+                android:dependency="switch_enable_health"
+                android:key="switch_huawei_health"
+                android:title="@string/pref_inner_health_title_huawei"
+                android:summary="@string/pref_inner_health_summary_huawei"
+                android:defaultValue="false"/>-->
+
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <!-- Notifications -->
+    <!--<PreferenceScreen
+        android:key="setting_button_notifications_key"
+        android:title="@string/pref_header_notifications_title"
+        android:summary="@string/pref_header_notifications_summary"
+        android:icon="@drawable/ic_notifications_black">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_notifications_title"
+            android:summary="@string/pref_header_notifications_summary">
+
+            <SwitchPreference
+                android:key="switch_enable_notifications"
+                android:title="Enable notifications"
+                android:defaultValue="false"/>
+
+            <ListPreference
+                android:dependency="switch_enable_notifications"
+                android:key="list_frequency_notifications"
+                android:title="@string/pref_inner_notifications_title_frequency"
+                android:summary="@string/pref_inner_notifications_summary_frequency"
+                android:dialogTitle="@string/pref_inner_notifications_title_frequency"
+                android:entries="@array/pref_notifications_frequency_entries"
+                android:entryValues="@array/pref_notifications_frequency_values"
+                android:defaultValue="2"/>
+
+            <SwitchPreference
+                android:dependency="switch_enable_notifications"
+                android:key="switch_vibrate_notifications"
+                android:title="@string/pref_inner_notifications_title_vibrate"
+                android:summary="@string/pref_inner_notifications_summary_vibrate"
+                android:defaultValue="true"/>
+
+
+        </PreferenceCategory>
+    </PreferenceScreen>-->
+
+</PreferenceScreen>

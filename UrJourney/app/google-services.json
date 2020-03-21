@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "147689551386",
+    "firebase_url": "https://urjourney-app.firebaseio.com",
+    "project_id": "urjourney-app",
+    "storage_bucket": "urjourney-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147689551386:android:083aeb442deea951",
+        "android_client_info": {
+          "package_name": "pt.ua.ieeta.urjourney.urjourney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147689551386-c52pf8so9orgrjsp15qmtiahdun7is3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pt.ua.ieeta.urjourney.urjourney",
+            "certificate_hash": "025b00d6ff65c2eb192c18d76fdcfae8c978d30d"
+          }
+        },
+        {
+          "client_id": "147689551386-gr2k690u5s2e49qgtca07b3qc3l9p12g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwGYXoRpa_psM9CnzkBxu6pT2Q4jnxnHQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147689551386-gr2k690u5s2e49qgtca07b3qc3l9p12g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

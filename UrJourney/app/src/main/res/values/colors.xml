@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- https://stackoverflow.com/questions/3769762/web-colors-in-an-android-color-xml-resource-file -->
+    <!-- Home buttons colors -->
+    <color name="home_button_yellow">#E6E600</color>
+    <color name="yellow_transp">#f0f066</color>
+
+    <color name="home_button_red">#FF0000</color>
+    <color name="red_transp">#ff6666</color>
+
+    <color name="home_button_green">#008000</color>
+    <color name="green_transp">#66b266</color>
+
+
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="steps_chart_color">#FFA500</color>
+
+</resources>

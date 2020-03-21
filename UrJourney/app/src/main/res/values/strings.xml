@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">UrJourney</string>
+
+    <!-- Navigation Tab Bar names-->
+    <string name="title_home">Home</string>
+    <string name="title_timeline">Timeline</string>
+    <string name="title_profile">Profile</string>
+
+    <!-- Home Fragment names -->
+    <string name="home_button_red">Red</string>
+    <string name="home_button_yellow">Yellow</string>
+    <string name="home_button_green">Green</string>
+
+    <string name="home_textually_mood_green">good mood</string>
+    <string name="home_textually_mood_yellow">neutral mood</string>
+    <string name="home_textually_mood_red">bad mood</string>
+
+    <string name="home_textually_moment_green">good moments</string>
+    <string name="home_textually_moment_yellow">neutral moments</string>
+    <string name="home_textually_moment_red">bad moments</string>
+
+
+    <!-- Strings related to login/register/reset -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm password</string>
+
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_reset_pass">Reset password</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Field required</string>
+
+    <string name="error_auth_fail">Authentication failed</string>
+    <string name="info_auth_success">Successfully authenticated</string>
+
+    <string name="info_register_success">Account created</string>
+
+    <string name="info_verification_email">Verification email sent to</string>
+    <string name="error_verification_email">Failed to send verification email</string>
+
+    <string name="info_reset_email">Password reset email sent to</string>
+    <string name="error_reset_email">Failed to send password reset email</string>
+
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_reset_pass">Reset Password</string>
+
+    <string name="title_fragment_logout">Confirm Logout</string>
+    <string name="subtitle_fragment_logout">Are you sure you want to logout?</string>
+
+    <!-- Strings related to about you -->
+    <string name="title_activity_personal_info">Personal information</string>
+
+    <string name="personal_info_about">About you...</string>
+    <string name="personal_info_fname">First name</string>
+    <string name="personal_info_lname">Last name</string>
+    <string name="personal_info_birthday">Birthday</string>
+    <string name="personal_info_gender">Gender</string>
+
+    <string name="personal_info_gender_female">Female</string>
+    <string name="personal_info_gender_male">Male</string>
+    <string name="personal_info_gender_other">Other</string>
+    <string name="error_invalid_personal_info_gender">The gender is not valid</string>
+
+    <string name="personal_info_success">Updated personal information</string>
+
+    <string-array name="gender_array">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Account -->
+    <!-- Account Header -->
+    <string name="pref_header_account_title">Account</string>
+    <string name="pref_header_account_summary">Your account details</string>
+
+    <!-- Account Inner -->
+    <string name="pref_inner_account_title_first_name">First name</string>
+    <string name="pref_inner_account_summary_first_name">First_name_summary</string>
+    <string name="pref_inner_account_title_last_name">Last name</string>
+    <string name="pref_inner_account_summary_last_name">Last_name_summary</string>
+    <string name="pref_inner_account_title_email">Email</string>
+    <string name="pref_inner_account_summary_email">Email_summary</string>
+    <string name="pref_inner_account_title_birthday">Birthday</string>
+    <string name="pref_inner_account_summary_birthday">Birthday_summary</string>
+    <string name="pref_inner_account_title_gender">Gender</string>
+    <string name="pref_inner_account_summary_gender">gender_summary</string>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <!-- Health -->
+    <!-- Health Header -->
+    <string name="pref_header_health_title">Health</string>
+    <string name="pref_header_health_summary">Your health provider details</string>
+
+    <!-- Health Inner -->
+    <string name="pref_inner_health_title_google">Google Fit</string>
+    <string name="pref_inner_health_summary_google">UrJourney uses Google Fit data to check your heart rate, sleep and steps</string>
+    <string name="pref_inner_health_title_samsung">Samsung Health</string>
+    <string name="pref_inner_health_summary_samsung">Use Samsung Health as the health provider</string>
+    <string name="pref_inner_health_title_huawei">Huawei Health</string>
+    <string name="pref_inner_health_summary_huawei">Use Huawei Health as the health provider</string>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <!-- Notifications -->
+    <!-- Notifications Header -->
+    <string name="pref_header_notifications_title">Notifications</string>
+    <string name="pref_header_notifications_summary">Notifications options</string>
+
+    <!-- Notifications Inner -->
+    <string name="pref_inner_notifications_title_frequency">Notifications frequency</string>
+    <string name="pref_inner_notifications_summary_frequency">Choose number of notifications</string>
+    <string name="pref_inner_notifications_title_vibrate">Vibrate</string>
+    <string name="pref_inner_notifications_summary_vibrate">Vibrate on new notification</string>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <!-- Location -->
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+
+    <string name="settings">Settings</string>
+
+    <!-- Timeline Detail Fragment names -->
+    <string name="timeline_detail_mood">How are you?</string>
+    <string name="timeline_detail_feeling">How did you sleep?</string>
+    <string name="timeline_detail_feeling_note">Enter note</string>
+
+    <string name="timeline_detail_activity">What are you up to?</string>
+    <string name="timeline_detail_activity_note">Enter activity note</string>
+
+    <!-- QR/Magic word -->
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <!--<string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>-->
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+
+    <!-- qr activity -->
+    <string name="finish_reading">"Proceed"</string>
+    <string name="code_reading">QR code</string>
+    <string name="text_reading">Secret code</string>
+
+    <string name="barcode_header">In order to complete your check in process in the study, please read the QR code or Secret code sent to your email</string>
+    <string name="barcode_success">QR code read successfully</string>
+    <string name="barcode_failure">No QR code captured</string>
+
+    <!-- Magical text activity -->
+    <string name="action_magical_word">Secret coded</string>
+    <string name="prompt_magical_word">Secret code</string>
+    <string name="validate_magical_word">Validate</string>
+    <string name="cancel_magical_word">Cancel</string>
+    <string name="magical_word_success">Secret code read successfully</string>
+    <string name="magical_word_failure">No secret code captured</string>
+    <string name="magical_word_error">"Error reading secret code: %1$s"</string>
+
+    <string name="info_checkin_sucess">Successfully checked in</string>
+
+    <!-- Notifications -->
+    <string name="notification_morning_text">Good morning. How are you feeling?</string>
+    <string name="notification_afternoon_text">Hey there! Don\'t forget to tell how do you feel</string>
+    <string name="notification_evening_text">Before finishing your day, please take a moment to tell how do you feel</string>
+</resources>

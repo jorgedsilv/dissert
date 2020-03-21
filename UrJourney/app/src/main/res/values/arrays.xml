@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_notifications_frequency_entries">
+        <item>2 per day</item>
+        <item>3 per day</item>
+        <item>5 per day</item>
+    </string-array>
+    <string-array name="pref_notifications_frequency_values">
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="personal_info_gender_entries">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="personal_info_gender_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:key="setting_button_account_key"
+        android:title="@string/pref_header_account_title"
+        android:summary="@string/pref_header_account_summary"
+        android:icon="@drawable/ic_person_black"
+        android:iconSpaceReserved="true">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_account_title"
+            android:summary="@string/pref_header_account_summary">
+
+            <Preference
+                android:key="@string/pref_inner_account_title_first_name"
+                android:title="@string/pref_inner_account_title_first_name"
+                android:summary="@string/pref_inner_account_summary_first_name" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_last_name"
+                android:title="@string/pref_inner_account_title_last_name"
+                android:summary="@string/pref_inner_account_summary_last_name" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_email"
+                android:title="@string/pref_inner_account_title_email"
+                android:summary="@string/pref_inner_account_summary_email" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_birthday"
+                android:title="@string/pref_inner_account_title_birthday"
+                android:summary="@string/pref_inner_account_summary_birthday" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_gender"
+                android:title="@string/pref_inner_account_title_gender"
+                android:summary="@string/pref_inner_account_summary_gender" />
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+
+</PreferenceScreen>
