@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<title>Firebase Basics</title>
+
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-pink.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<!-- Main stylesheet -->
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+ 	<!-- Login dialog -->
+ 	
+ 	<dialog id="loginDialog" class="mdl-dialog">
+	    <h4 class="mdl-dialog__title">Login</h4>
+	    <div class="mdl-dialog__content">
+	      <p id="loginError">Error</p>
+	      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input id="loginEmail" class="mdl-textfield__input" type="text">
+		    <label class="mdl-textfield__label" for="sample3">Email</label>
+		  </div>
+		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input id="loginPassword" class="mdl-textfield__input" type="text">
+		    <label class="mdl-textfield__label" for="sample3">Password</label>
+		  </div>
+	    </div>
+	    <div class="mdl-dialog__actions">
+			<button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+			  Login
+			</button>
+			<div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+	    </div>
+  	</dialog>
+
+ 	<div class="login-cover">
+ 		<div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+ 	</div>
+
+ 	<!-- Main page content -->
+
+	<div class="mdl-layout mdl-js-layout">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout-icon"></div>
+	    <div class="mdl-layout__header-row">
+	      <span class="mdl-layout__title">Simple Layout
+	      	<span class="page-title-span"> | </span>
+	      	<span class="page-title-span"> Home </span>
+	      </span>
+	      <div class="mdl-layout-spacer"></div>
+	      <nav class="mdl-navigation">
+	        <!-- Raised button -->
+			<button id="logoutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+			  Sign Out <i class="button-right-class material-icons"> account_circle </i>
+			</button>
+	      </nav>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	  </div>
+	</div>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCpHQ4pn5SazWHpISU9wnB8fpL3WkzeOzM",
+	    authDomain: "urjourney-app.firebaseapp.com",
+	    databaseURL: "https://urjourney-app.firebaseio.com",
+	    projectId: "urjourney-app",
+	    storageBucket: "urjourney-app.appspot.com",
+	    messagingSenderId: "147689551386"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ 	<script src="index.js"></script>
+</body>
+</html>

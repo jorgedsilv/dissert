@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<title>UrJourney</title>
+
+ 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-pink.min.css" />
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<!-- Main stylesheet -->
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+ 	<!-- Login dialog -->
+ 	
+ 	<dialog id="loginDialog" class="mdl-dialog">
+	    <h4 class="mdl-dialog__title">Login</h4>
+	    <div class="mdl-dialog__content">
+	      <p id="loginError">Error</p>
+	      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input id="loginEmail" class="mdl-textfield__input" type="text">
+		    <label class="mdl-textfield__label" for="sample3">Email</label>
+		  </div>
+		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    <input id="loginPassword" class="mdl-textfield__input" type="password">
+		    <label class="mdl-textfield__label" for="sample3">Password</label>
+		  </div>
+	    </div>
+	    <div class="mdl-dialog__actions">
+			<button id="loginBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+			  Login
+			</button>
+			<div id="loginProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+	    </div>
+  	</dialog>
+
+ 	<div class="login-cover">
+ 		<div class="page-loader mdl-spinner mdl-js-spinner is-active"></div>
+ 	</div>
+
+ 	<!-- Main page content -->
+
+	<div class="mdl-layout mdl-js-layout">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout-icon"></div>
+	    <div class="mdl-layout__header-row">
+	      <span class="mdl-layout__title">UrJourney
+	      	<span class="page-title-span"> | </span>
+	      	<span class="page-title-span"> Home </span>
+	      </span>
+	      <div class="mdl-layout-spacer"></div>
+	      <nav class="mdl-navigation">
+	        <!-- Raised button -->
+			<button id="logoutBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+			  <i class="button-right-class material-icons"> account_circle </i> Sign Out 
+			</button>
+	      </nav>
+	    </div>
+	  </header>
+	  
+	  <div class="mdl-layout__drawer">
+	  	<span class="mdl-layout-title">Options</span>
+		    <nav class="mdl-navigation">
+		      <a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i> Home</a>
+		      <a class="mdl-navigation__link" href="studies.html"><i class="material-icons">assignment</i> Studies</a>
+		      <a class="mdl-navigation__link" href="users.html"><i class="material-icons">people</i> Participants</a>
+		    </nav>
+	  </div>
+
+	  <dialog id="createStudyDialog" class="mdl-dialog">
+	  	<h4 class="mdl-dialog__title">Create study</h4>
+	    <div class="mdl-dialog__content">
+	    	<p id="createStudyError">Error</p>
+	    	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    	<input id="studyTitle" class="mdl-textfield__input" type="text">
+		    	<label class="mdl-textfield__label" for="sample3">Title</label>
+		  	</div>
+		  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    	<input id="studyLocation" class="mdl-textfield__input" type="text">
+		    	<label class="mdl-textfield__label" for="sample3">Location</label>
+		  	</div>
+		  	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+		    	<input id="studyMagicWord" class="mdl-textfield__input" type="text">
+		    	<label class="mdl-textfield__label" for="sample3">Secret code</label>
+		  	</div>
+	    </div>
+	    <div class="mdl-dialog__actions">
+			<button id="createBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+				Create
+			</button>
+			<button id="cancelBtn" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+				Cancel
+			</button>
+			<div id="createStudyProgress" class="mdl-spinner mdl-js-spinner is-active"></div>
+	    </div>
+  	  </dialog>
+
+  	  <div id="welcomeList" class="mdl-grid">
+  	  	<div class="mdl-cell mdl-cell--4-col mdl-cell--middle">
+        <div id=+"newStudyHeader" class="card-users mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
+              <h1 class="mdl-card__title-text">
+              	New study
+          	  </h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+    			<h5 align="justify">
+    			Creates a new study within UrJourney. Requires a title for the study, its location and and a magic word so participants can self check-in.
+    			</h5>
+  			</div>
+            <div class="mdl-card__actions mdl-card--border">
+              <a id="createStudyBtn" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              <i class="material-icons">add_circle</i> Create study 
+              </a>
+            </div>
+        </div>
+  		</div>
+  	  </div>
+
+  	  <h3 id="studiesHeader" align="center">Studies</h3>
+	  	<p id="studiesInfo" align="center">
+	  		Currently existing studies
+		</p>
+  	  <div id="afterList" class="mdl-grid">
+  	  	
+  	  </div>
+
+	</div>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCpHQ4pn5SazWHpISU9wnB8fpL3WkzeOzM",
+	    authDomain: "urjourney-app.firebaseapp.com",
+	    databaseURL: "https://urjourney-app.firebaseio.com",
+	    projectId: "urjourney-app",
+	    storageBucket: "urjourney-app.appspot.com",
+	    messagingSenderId: "147689551386"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ 	<script src="index.js"></script>
+</body>
+</html>

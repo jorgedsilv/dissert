@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<title>Firebase Javascript - Read Data</title>
+ 	<link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ 	<h1>Firebase Javascript<br/><small><em>Read Data</em></small></h1>
+ 
+	<ul id="userList">
+		<h2>Users</h2>
+	</ul>
+
+	<ul id="moodList">
+		<h2>Mood entries</h2>
+	</ul>
+
+	<ul id="moodDetail">
+		<h2>Detailed information</h2>
+	</ul>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCpHQ4pn5SazWHpISU9wnB8fpL3WkzeOzM",
+	    authDomain: "urjourney-app.firebaseapp.com",
+	    databaseURL: "https://urjourney-app.firebaseio.com",
+	    projectId: "urjourney-app",
+	    storageBucket: "urjourney-app.appspot.com",
+	    messagingSenderId: "147689551386"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+ 	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

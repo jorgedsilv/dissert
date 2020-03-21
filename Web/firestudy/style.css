@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+}
+
+.page-title-span {
+	margin-left: 10px;
+}
+
+.button-right-class {
+	margin-left: 10px;
+}
+
+/* Login section*/
+
+.login-cover {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 800;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#loginProgress {
+	display: none;
+}
+
+#loginError {
+	display: none;
+}
+
+/* study card */
+.card-study.mdl-card {
+  width: 375px;
+  height: auto;
+}
+.card-study > .mdl-card__title {
+  color: #fff;
+  background:
+    url('') bottom right 15% no-repeat #46B6AC;
+}
+
+.card-square.mdl-card {
+  width: 350px;
+  height: 380px;
+}
+.card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('') bottom right 15% no-repeat #46B6AC;
+}
+
+/* all users card*/
+.card-users.mdl-card {
+  width: 325px;
+  height: 325px;
+}
+.card-users > .mdl-card__title {
+  color: #fff;
+  background:
+    url('') bottom right 15% no-repeat #46B6AC;
+}
+
+.card-mood.mdl-card {
+  width: 325px;
+  height: auto;
+}
+.card-mood > .mdl-card__title {
+  color: #fff;
+  background:
+    url('') bottom right 15% no-repeat #46B6AC;
+}
+
+/* end*/

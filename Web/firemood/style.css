@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	outline: none;
+}
+
+.page-title-span {
+	margin-left: 10px;
+}
+
+.button-right-class {
+	margin-left: 10px;
+}
+
+.button-left-class {
+	margin-right: 10px;
+}
+
