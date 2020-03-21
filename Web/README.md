@@ -2,7 +2,7 @@
 
 Directório com mini-projectos de desenvolvimento Web com vista a criar plataforma Web de gestão de estudos
 
-##Info
+## Info
 
 Directório com versão final: 'firestudy'.
 Plataforma Web usa: 
