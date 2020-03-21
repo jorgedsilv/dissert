@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyProfileApplication</string>
+
+    <!-- Account -->
+    <!-- Account Header -->
+    <string name="pref_header_account_title">Account Settings</string>
+    <string name="pref_header_account_summary">Your account details</string>
+
+    <!-- Account Inner -->
+    <string name="pref_inner_account_title_name">Full name</string>
+    <string name="pref_inner_account_summary_name">Full_name_summary</string>
+    <string name="pref_inner_account_title_email">Email</string>
+    <string name="pref_inner_account_summary_email">Email_summary</string>
+    <string name="pref_inner_account_title_birthday">Birthday</string>
+    <string name="pref_inner_account_summary_birthday">Birthday_summary</string>
+    <string name="pref_inner_account_title_gender">Gender</string>
+    <string name="pref_inner_account_summary_gender">gender_summary</string>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxx -->
+
+    <!-- Health -->
+    <!-- Health Header -->
+    <string name="pref_header_health_title">Health Settings</string>
+    <string name="pref_header_health_summary">Your health provider details</string>
+
+    <!-- Health Inner -->
+    <string name="pref_inner_health_title_google">Google Fit</string>
+    <string name="pref_inner_health_summary_google">Use Google Fit as the health provider</string>
+    <string name="pref_inner_health_title_samsung">Samsung Health</string>
+    <string name="pref_inner_health_summary_samsung">Use Samsung Health as the health provider</string>
+    <string name="pref_inner_health_title_huawei">Huawei Health</string>
+    <string name="pref_inner_health_summary_huawei">Use Huawei Health as the health provider</string>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxx -->
+</resources>

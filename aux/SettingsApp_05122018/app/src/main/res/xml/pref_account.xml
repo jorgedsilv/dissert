@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<Preference
+    android:key="@string/pref_inner_account_title_name"
+    android:title="@string/pref_inner_account_title_name"
+    android:summary="@string/pref_inner_account_summary_name" />
+
+<Preference
+    android:key="@string/pref_inner_account_title_email"
+    android:title="@string/pref_inner_account_title_email"
+    android:summary="@string/pref_inner_account_summary_email" />
+
+<Preference
+    android:key="@string/pref_inner_account_title_birthday"
+    android:title="@string/pref_inner_account_title_birthday"
+    android:summary="@string/pref_inner_account_summary_birthday" />
+
+<Preference
+    android:key="@string/pref_inner_account_title_gender"
+    android:title="@string/pref_inner_account_title_gender"
+    android:summary="@string/pref_inner_account_summary_gender" />
+</PreferenceScreen>

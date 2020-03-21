@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:key="setting_button_account_key"
+        android:title="@string/pref_header_account_title"
+        android:summary="@string/pref_header_account_summary"
+        android:icon="@drawable/ic_person_black"
+        android:iconSpaceReserved="true">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_account_title"
+            android:summary="@string/pref_header_account_summary">
+
+            <Preference
+                android:key="@string/pref_inner_account_title_name"
+                android:title="@string/pref_inner_account_title_name"
+                android:summary="@string/pref_inner_account_summary_name" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_email"
+                android:title="@string/pref_inner_account_title_email"
+                android:summary="@string/pref_inner_account_summary_email" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_birthday"
+                android:title="@string/pref_inner_account_title_birthday"
+                android:summary="@string/pref_inner_account_summary_birthday" />
+
+            <Preference
+                android:key="@string/pref_inner_account_title_gender"
+                android:title="@string/pref_inner_account_title_gender"
+                android:summary="@string/pref_inner_account_summary_gender" />
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="setting_button_health_key"
+        android:title="@string/pref_header_health_title"
+        android:summary="@string/pref_header_health_summary"
+        android:icon="@drawable/ic_health_black">
+
+        <PreferenceCategory
+            android:title="@string/pref_header_health_title"
+            android:summary="@string/pref_header_health_summary">
+
+            <!--<Preference
+                android:summary="Connect to Health provider" />-->
+
+            <SwitchPreference
+                android:key="switch_enable_health"
+                android:title="Enable Health provider"
+                android:summary="Connect to Health provider"
+                android:defaultValue="false"/>
+
+            <SwitchPreference
+                android:dependency="switch_enable_health"
+                android:key="switch_google_fit"
+                android:title="@string/pref_inner_health_title_google"
+                android:summary="@string/pref_inner_health_summary_google"
+                android:defaultValue="false"/>
+
+            <SwitchPreference
+                android:dependency="switch_enable_health"
+                android:key="switch_samsung_health"
+                android:title="@string/pref_inner_health_title_samsung"
+                android:summary="@string/pref_inner_health_summary_samsung"
+                android:defaultValue="false"/>
+
+            <SwitchPreference
+                android:dependency="switch_enable_health"
+                android:key="switch_huawei_health"
+                android:title="@string/pref_inner_health_title_huawei"
+                android:summary="@string/pref_inner_health_summary_huawei"
+                android:defaultValue="false"/>
+
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>
+
+
+    <!--
+    <PreferenceCategory
+        android:title="Basic Settings"
+        android:key="pref_key_basic">
+        <CheckBoxPreference
+            android:key="checkbox"
+            android:summary="Tap to check if on or off"
+            android:title="Checkbox Preference" />
+
+        <RingtonePreference
+            android:key="ringtone"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:summary="Pick a ringtone you like"
+            android:title="Ringtone Preference" />
+
+        <EditTextPreference
+            android:dialogTitle="Enter a text"
+            android:key="text"
+            android:summary="Click to show a text entry dialog"
+            android:title="EditText Preference" />
+
+        <SwitchPreference
+            android:key="switch"
+            android:title="Switch Preference"
+            android:summary="Click to switch on or off"
+            android:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Advanced Settings"
+        android:key="pref_key_advanced">
+
+        <PreferenceScreen
+            android:key="button_voicemail_setting_key"
+            android:title="voicemail_settings"
+            android:persistent="false"
+            android:icon="@android:drawable/ic_menu_call">
+
+            <PreferenceCategory
+                android:title="Voicemail Settings"
+                android:key="pref_key_voicemail_settings">
+
+                <Preference
+                    android:title="Voicemail"
+                    android:summary="Your voicemail is currently broadcast to your landline" />
+
+                <SwitchPreference
+                    android:key="switch"
+                    android:title="Switch Preference"
+                    android:summary="Click to switch on or off"
+                    android:defaultValue="true"/>
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+
+        <ListPreference
+            android:dialogTitle="Select duration"
+            android:entries="@array/settings_list_preference_titles"
+            android:entryValues="@array/settings_list_preference_values"
+            android:key="list"
+            android:summary="Click to show a list to choose from"
+            android:title="List Preference" />
+
+
+        <SwitchPreference
+            android:key="switch"
+            android:title="Switch Preference"
+            android:summary="Click to switch on or off"
+            android:defaultValue="true"/>
+    </PreferenceCategory>-->

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">StandUp</string>
+
+    <string name="NOTIFICATION_HEADER">StandUp</string>
+    <string name="NOTIFICATION_MORNING_TEXT">Good morning. Don\'t forget to tell how do you feel today</string>
+    <string name="NOTIFICATION_AFTERNOON_TEXT">Hey there! How are you feeling?</string>
+    <string name="NOTIFICATION_EVENING_TEXT">Before you call it a day, take a moment to tell me how are you ;)</string>
+</resources>
